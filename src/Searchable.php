@@ -14,7 +14,7 @@ trait Searchable
     public function scopeSearch(Builder $builder, string $term = '')
     {
         if (!$this->searchable) {
-            throw new Exception("Please define the searchable property . ");
+            throw new Exception("Pleases define the searchable property . ");
         }
 
         foreach ($this->searchable as $searchable) {
